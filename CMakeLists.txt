@@ -17,6 +17,9 @@ set(PROJECT_SOURCES
         proceedwindow.cpp
         proceedwindow.h
         proceedwindow.ui
+        # DSA Files
+               dsa/book.cpp
+               dsa/book.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
