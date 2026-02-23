@@ -6,7 +6,7 @@ LinkedList::LinkedList()
 {
 }
 
-//  Destructor â€” walk the list and delete every node keeping a current pointer, save next before  deleting so we don't lose the chain.
+//  Destructor â€” walk the list and delete every node keeping a current pointer, save next before  deleting.
 LinkedList::~LinkedList()
 {
     Book* current = head;
@@ -22,11 +22,6 @@ LinkedList::~LinkedList()
 }
 
 //  addBook â€” append to the TAIL of the list:So books display in insertion order oldest first.
-//  Steps:
-//    1. Reject duplicates (same ISBN)
-//    2. Create new Book on the heap
-//    3. If list is empty â†’ new book becomes head
-//    4. Otherwise â†’ walk to last node, attach there
 bool LinkedList::addBook(const QString& title,
                          const QString& author,
                          const QString& isbn)
@@ -57,11 +52,6 @@ bool LinkedList::addBook(const QString& title,
 }
 
 //  removeBook â€” find by ISBN and unlink the node
-//  Key DSA concept: to remove a node, we need the node BEFORE it
-//  so we can re-route the `next` pointer around the target.
-//  Special case: removing the head node (no previous node).
-
-
 bool LinkedList::removeBook(const QString& isbn)
 {
     if (head == nullptr) return false;   // empty list
