@@ -558,6 +558,12 @@ LibraryManagementSystem_autogen/timestamp: \
 	C:/Users/ACER/Downloads/LibraryManagementSystem/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake \
 	C:/Users/ACER/Downloads/LibraryManagementSystem/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	C:/Users/ACER/Downloads/LibraryManagementSystem/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/LibraryManagementSystem_autogen/moc_predefs.h \
+	C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/book.cpp \
+	C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/book.h \
+	C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/linkedlist.cpp \
+	C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/linkedlist.h \
+	C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/queue.cpp \
+	C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/queue.h \
 	C:/Users/ACER/Downloads/LibraryManagementSystem/main.cpp \
 	C:/Users/ACER/Downloads/LibraryManagementSystem/mainwindow.cpp \
 	C:/Users/ACER/Downloads/LibraryManagementSystem/mainwindow.h \

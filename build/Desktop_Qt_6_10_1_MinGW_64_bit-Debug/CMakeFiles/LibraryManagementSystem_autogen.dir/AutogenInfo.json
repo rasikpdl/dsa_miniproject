@@ -329,6 +329,12 @@
 			null
 		],
 		[
+			"C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/queue.h",
+			"MU",
+			"T3PLNVKCB4/moc_queue.cpp",
+			null
+		],
+		[
 			"C:/Users/ACER/Downloads/LibraryManagementSystem/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -419,6 +425,11 @@
 		],
 		[
 			"C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/linkedlist.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/queue.cpp",
 			"MU",
 			null
 		],

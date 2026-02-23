@@ -22,7 +22,10 @@ set(PROJECT_SOURCES
                dsa/book.h
                dsa/linkedlist.h
                dsa/linkedlist.cpp
+               dsa/queue.cpp
+               dsa/queue.h
 )
+
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(LibraryManagementSystem

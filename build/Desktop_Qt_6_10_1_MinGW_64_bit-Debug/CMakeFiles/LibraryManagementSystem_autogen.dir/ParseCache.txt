@@ -760,3 +760,9 @@ C:/Users/ACER/Downloads/LibraryManagementSystem/mainwindow.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/Users/ACER/Downloads/LibraryManagementSystem/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/LibraryManagementSystem_autogen/moc_predefs.h
  mdp:C:/Users/ACER/Downloads/LibraryManagementSystem/mainwindow.h
+C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/queue.h
+C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/book.h
+C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/linkedlist.h
+C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/queue.cpp
+C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/book.cpp
+C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/linkedlist.cpp
