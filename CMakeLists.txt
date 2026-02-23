@@ -20,6 +20,8 @@ set(PROJECT_SOURCES
         # DSA Files
                dsa/book.cpp
                dsa/book.h
+               dsa/linkedlist.h
+               dsa/linkedlist.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
