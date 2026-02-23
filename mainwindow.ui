@@ -6,143 +6,441 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>900</width>
     <height>600</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1100</width>
+    <height>700</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Library Management System</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #0f0f0f;
+}</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLineEdit" name="isbnInput">
+   <widget class="QSplitter" name="splitter">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>160</y>
-      <width>113</width>
-      <height>28</height>
+      <x>20</x>
+      <y>20</y>
+      <width>686</width>
+      <height>507</height>
      </rect>
     </property>
-    <property name="text">
-     <string>ISBN NO:</string>
+    <property name="orientation">
+     <enum>Qt::Orientation::Horizontal</enum>
     </property>
-   </widget>
-   <widget class="QLineEdit" name="titleInput">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>220</y>
-      <width>113</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Title Field:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="borrowerInput">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>220</y>
-      <width>113</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>borrower name:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="authorInput">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>170</y>
-      <width>113</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>author name:</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="issueBookBtn">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>310</y>
-      <width>90</width>
-      <height>29</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>issueBookBtn</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="returnBookBtn">
-    <property name="geometry">
-     <rect>
-      <x>240</x>
-      <y>320</y>
-      <width>111</width>
-      <height>29</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>returnBookBtn</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="searchISBNBtn">
-    <property name="geometry">
-     <rect>
-      <x>440</x>
-      <y>320</y>
-      <width>90</width>
-      <height>29</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>searchISBNBtn</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="searchTitleBtn">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>460</y>
-      <width>90</width>
-      <height>29</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>searchTitleBtn</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="showWaitingBtn">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>460</y>
-      <width>90</width>
-      <height>29</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>showWaitingBtn</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="issueBookBtn_2">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>460</y>
-      <width>90</width>
-      <height>29</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>issueBookBtn</string>
-    </property>
+    <widget class="QWidget" name="">
+     <layout class="QVBoxLayout" name="verticalLayout_8">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QLabel" name="label_isbn">
+              <property name="text">
+               <string>I S B N</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="isbnInput">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>ISBN NO:</string>
+              </property>
+              <property name="frame">
+               <bool>false</bool>
+              </property>
+              <property name="readOnly">
+               <bool>false</bool>
+              </property>
+              <property name="placeholderText">
+               <string>e. g.  978-0062315007</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QLabel" name="label_title">
+              <property name="text">
+               <string>T I T L E</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="titleInput">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>titleInput</string>
+              </property>
+              <property name="frame">
+               <bool>false</bool>
+              </property>
+              <property name="placeholderText">
+               <string>e. g.  The Alchemist</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_author">
+              <property name="text">
+               <string>A U T H O R</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="authorInput">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>authorInput</string>
+              </property>
+              <property name="frame">
+               <bool>false</bool>
+              </property>
+              <property name="placeholderText">
+               <string>e. g.  Paulo Coelho</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QLabel" name="label_borrower">
+              <property name="text">
+               <string> B O R R O W E R N A M E</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="borrowerInput">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>borrowerInput</string>
+              </property>
+              <property name="frame">
+               <bool>false</bool>
+              </property>
+              <property name="placeholderText">
+               <string>e. g.  Alice</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QPushButton" name="addBookBtn">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { border-color: #6ec87a; color: #6ec87a; }
+QPushButton:hover { background-color: rgba(110,200,122, 0.08); }</string>
+              </property>
+              <property name="text">
+               <string>+ Add Book</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="issueBookBtn">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { border-color: #c8a96e; color: #c8a96e; }
+QPushButton:hover { background-color: rgba(200,169,110, 0.08); }</string>
+              </property>
+              <property name="text">
+               <string>↗ Issue Book</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QPushButton" name="deleteBookBtn">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { border-color: #c86e6e; color: #c86e6e; }
+QPushButton:hover { background-color: rgba(200,110,110, 0.08); }</string>
+              </property>
+              <property name="text">
+               <string>✕ Delete Book</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="returnBookBtn">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { border-color: #6e9ec8; color: #6e9ec8; }
+QPushButton:hover { background-color: rgba(110,158,200, 0.08); }</string>
+              </property>
+              <property name="text">
+               <string>↙ Return Book</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QPushButton" name="searchTitleBtn">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>34</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>⌕ Search By Title</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="searchISBNBtn">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>34</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton { border-color: #333333; color: #888888; }
+QPushButton:hover { background-color: #1a1a1a; color: #e0d8cc; }</string>
+            </property>
+            <property name="text">
+             <string>⌕ Search By ISBN</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="showWaitingBtn">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>34</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton { border-color: #c8b96e; color: #c8b96e; }
+QPushButton:hover { background-color: rgba(200,185,110, 0.08); }</string>
+            </property>
+            <property name="text">
+             <string>≡ Waiting List</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="statusLabel">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Ready. Fill in the fields and click an action  to proceed.</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="">
+     <layout class="QVBoxLayout" name="verticalLayout_10">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QLabel" name="waitingLabel">
+          <property name="text">
+           <string>waitingLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="totalLabel">
+          <property name="text">
+           <string>totalLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="issuedLabel">
+          <property name="text">
+           <string>issuedLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QListWidget" name="bookListWidget">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="spacing">
+         <number>4</number>
+        </property>
+        <property name="uniformItemSizes">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -150,7 +448,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>900</width>
      <height>25</height>
     </rect>
    </property>

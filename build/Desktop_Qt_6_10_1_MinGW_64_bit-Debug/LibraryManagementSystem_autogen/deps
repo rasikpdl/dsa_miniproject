@@ -1,4 +1,6 @@
 LibraryManagementSystem_autogen/timestamp: \
+	C:/Qt/6.10.1/mingw_64/include/QtCore/QList \
+	C:/Qt/6.10.1/mingw_64/include/QtCore/QString \
 	C:/Qt/6.10.1/mingw_64/include/QtCore/q17memory.h \
 	C:/Qt/6.10.1/mingw_64/include/QtCore/q20functional.h \
 	C:/Qt/6.10.1/mingw_64/include/QtCore/q20iterator.h \
@@ -558,8 +560,12 @@ LibraryManagementSystem_autogen/timestamp: \
 	C:/Users/ACER/Downloads/LibraryManagementSystem/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake \
 	C:/Users/ACER/Downloads/LibraryManagementSystem/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	C:/Users/ACER/Downloads/LibraryManagementSystem/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/LibraryManagementSystem_autogen/moc_predefs.h \
+	C:/Users/ACER/Downloads/LibraryManagementSystem/controller/librarymanager.cpp \
+	C:/Users/ACER/Downloads/LibraryManagementSystem/controller/librarymanager.h \
 	C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/book.cpp \
 	C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/book.h \
+	C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/hashtable.cpp \
+	C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/hashtable.h \
 	C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/linkedlist.cpp \
 	C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/linkedlist.h \
 	C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/queue.cpp \

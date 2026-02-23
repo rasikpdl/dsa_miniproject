@@ -3,9 +3,6 @@
 
 #include <QString>
 
-//  Book — represents a single book in the library
-//  This is also a NODE for our custom LinkedList.
-//  Each Book holds its own data + a pointer to the next Book.
 
 class Book {
 public:
@@ -25,7 +22,6 @@ public:
          const QString& author,
          const QString& isbn);
 
-    //  Helper
     // Returns a tidy one-line summary for display in the UI
     QString toDisplayString() const;
 };

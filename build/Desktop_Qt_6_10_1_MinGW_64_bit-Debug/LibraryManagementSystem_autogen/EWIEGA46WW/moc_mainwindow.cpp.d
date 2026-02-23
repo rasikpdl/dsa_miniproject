@@ -1,5 +1,7 @@
 C:/Users/ACER/Downloads/LibraryManagementSystem/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/LibraryManagementSystem_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/ACER/Downloads/LibraryManagementSystem/mainwindow.h \
   C:/Users/ACER/Downloads/LibraryManagementSystem/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/LibraryManagementSystem_autogen/moc_predefs.h \
+  C:/Qt/6.10.1/mingw_64/include/QtCore/QList \
+  C:/Qt/6.10.1/mingw_64/include/QtCore/QString \
   C:/Qt/6.10.1/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.10.1/mingw_64/include/QtCore/q20iterator.h \
@@ -373,4 +375,9 @@ C:/Users/ACER/Downloads/LibraryManagementSystem/build/Desktop_Qt_6_10_1_MinGW_64
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/ACER/Downloads/LibraryManagementSystem/controller/librarymanager.h \
+  C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/book.h \
+  C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/hashtable.h \
+  C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/linkedlist.h \
+  C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/queue.h

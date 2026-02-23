@@ -384,6 +384,8 @@ C:/Users/ACER/Downloads/LibraryManagementSystem/proceedwindow.cpp
  uic:./ui_proceedwindow.h
 C:/Users/ACER/Downloads/LibraryManagementSystem/mainwindow.h
  mmc:Q_OBJECT
+ mdp:C:/Qt/6.10.1/mingw_64/include/QtCore/QList
+ mdp:C:/Qt/6.10.1/mingw_64/include/QtCore/QString
  mdp:C:/Qt/6.10.1/mingw_64/include/QtCore/q17memory.h
  mdp:C:/Qt/6.10.1/mingw_64/include/QtCore/q20functional.h
  mdp:C:/Qt/6.10.1/mingw_64/include/QtCore/q20iterator.h
@@ -759,6 +761,11 @@ C:/Users/ACER/Downloads/LibraryManagementSystem/mainwindow.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/Users/ACER/Downloads/LibraryManagementSystem/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/LibraryManagementSystem_autogen/moc_predefs.h
+ mdp:C:/Users/ACER/Downloads/LibraryManagementSystem/controller/librarymanager.h
+ mdp:C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/book.h
+ mdp:C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/hashtable.h
+ mdp:C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/linkedlist.h
+ mdp:C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/queue.h
  mdp:C:/Users/ACER/Downloads/LibraryManagementSystem/mainwindow.h
 C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/queue.h
 C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/book.h
@@ -766,3 +773,7 @@ C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/linkedlist.h
 C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/queue.cpp
 C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/book.cpp
 C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/linkedlist.cpp
+C:/Users/ACER/Downloads/LibraryManagementSystem/controller/librarymanager.h
+C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/hashtable.h
+C:/Users/ACER/Downloads/LibraryManagementSystem/controller/librarymanager.cpp
+C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/hashtable.cpp
