@@ -1,18 +1,13 @@
 #include "librarymanager.h"
 
-// ============================================================
 //  Constructor â€” create each DSA structure on the heap
-// ============================================================
 LibraryManager::LibraryManager()
 {
     bookList    = new LinkedList();
     waitingList = new Queue();
     searchIndex = new HashTable();
 }
-
-// ============================================================
-//  Destructor â€” delete DSA structures (they clean themselves up)
-// ============================================================
+//  Destructor â€” delete DSA structures
 LibraryManager::~LibraryManager()
 {
     delete bookList;      // LinkedList destructor frees all Book nodes
@@ -20,15 +15,10 @@ LibraryManager::~LibraryManager()
     delete searchIndex;   // HashTable destructor frees all HashNodes
 }
 
-// ============================================================
 //  addBook
 //
-//  Must insert into BOTH LinkedList AND HashTable so both
-//  structures stay in sync. If either fails, we do not proceed.
-//
-//  LinkedList â†’ stores the actual Book object (owns it)
-//  HashTable  â†’ stores a pointer to the same Book (index only)
-// ============================================================
+//  Must insert into BOTH LinkedList AND HashTable If either fails, we do not proceed.
+
 OperationResult LibraryManager::addBook(const QString& title,
                                         const QString& author,
                                         const QString& isbn)
@@ -51,15 +41,7 @@ OperationResult LibraryManager::addBook(const QString& title,
     return { true, "Success: \"" + title + "\" added to the catalogue." };
 }
 
-// ============================================================
 //  issueBook
-//
-//  Logic:
-//    1. Find book (via HashTable for speed)
-//    2. If not found â†’ error
-//    3. If already issued â†’ add borrower to waiting queue
-//    4. If available â†’ mark as issued
-// ============================================================
 OperationResult LibraryManager::issueBook(const QString& isbn,
                                           const QString& borrowerName)
 {
@@ -89,15 +71,7 @@ OperationResult LibraryManager::issueBook(const QString& isbn,
     return { true, "Success: \"" + book->title + "\" issued to " + borrowerName + "." };
 }
 
-// ============================================================
 //  returnBook
-//
-//  Logic:
-//    1. Find book
-//    2. Mark as NOT issued
-//    3. Check if anyone is queued for this ISBN
-//    4. If yes â†’ dequeue the next borrower and re-issue
-// ============================================================
 OperationResult LibraryManager::returnBook(const QString& isbn)
 {
     Book* book = searchIndex->search(isbn.trimmed());
@@ -113,9 +87,6 @@ OperationResult LibraryManager::returnBook(const QString& isbn)
     book->isIssued = false;
 
     // Check the waiting queue for this specific ISBN
-    // We need to scan the queue for a matching ISBN entry
-    // Strategy: dequeue entries one-by-one, keep the first match,
-    // re-enqueue the rest. Simple and transparent for evaluation.
     QString nextBorrower = "";
     QString nextIsbn     = "";
     int     totalSize    = waitingList->getSize();
@@ -146,9 +117,7 @@ OperationResult LibraryManager::returnBook(const QString& isbn)
     return { true, "\"" + book->title + "\" returned successfully. Now available." };
 }
 
-// ============================================================
 //  deleteBook â€” remove from both LinkedList AND HashTable
-// ============================================================
 OperationResult LibraryManager::deleteBook(const QString& isbn)
 {
     Book* book = searchIndex->search(isbn.trimmed());
@@ -162,18 +131,16 @@ OperationResult LibraryManager::deleteBook(const QString& isbn)
 
     QString title = book->title;
 
-    // Remove from HashTable first (before LinkedList deletes the Book)
+    // Remove from HashTable first
     searchIndex->remove(isbn.trimmed());
 
-    // Remove from LinkedList (this deletes the Book object from heap)
+    // Remove from LinkedList
     bookList->removeBook(isbn.trimmed());
 
     return { true, "\"" + title + "\" permanently removed from the catalogue." };
 }
 
-// ============================================================
 //  searchByISBN â€” O(1) via HashTable
-// ============================================================
 QString LibraryManager::searchByISBN(const QString& isbn) const
 {
     Book* book = searchIndex->search(isbn.trimmed());
@@ -183,9 +150,7 @@ QString LibraryManager::searchByISBN(const QString& isbn) const
     return formatBook(book);
 }
 
-// ============================================================
 //  searchByTitle â€” O(n) via LinkedList
-// ============================================================
 QString LibraryManager::searchByTitle(const QString& title) const
 {
     Book* book = bookList->findByTitle(title.trimmed());
@@ -195,9 +160,7 @@ QString LibraryManager::searchByTitle(const QString& title) const
     return formatBook(book);
 }
 
-// ============================================================
 //  getAllBooksDisplay â€” for populating QListWidget in MainWindow
-// ============================================================
 QList<QString> LibraryManager::getAllBooksDisplay() const
 {
     QList<QString> display;
@@ -214,9 +177,6 @@ QList<QString> LibraryManager::getAllBooksDisplay() const
     return display;
 }
 
-// ============================================================
-//  getWaitingListDisplay
-// ============================================================
 QList<QString> LibraryManager::getWaitingListDisplay() const
 {
     QList<QString> entries = waitingList->getAllEntries();
@@ -226,9 +186,7 @@ QList<QString> LibraryManager::getWaitingListDisplay() const
     return entries;
 }
 
-// ============================================================
 //  Summary counters
-// ============================================================
 int LibraryManager::totalBooks() const
 {
     return bookList->getSize();
@@ -249,9 +207,7 @@ int LibraryManager::waitingEntries() const
     return waitingList->getSize();
 }
 
-// ============================================================
 //  formatBook â€” internal helper for display strings
-// ============================================================
 QString LibraryManager::formatBook(Book* book) const
 {
     QString status = book->isIssued ? "[ISSUED]   " : "[AVAILABLE]";
