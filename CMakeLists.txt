@@ -26,6 +26,8 @@ set(PROJECT_SOURCES
                dsa/queue.h
                dsa/hashtable.cpp
                dsa/hashtable.h
+               controller/librarymanager.cpp
+               controller/librarymanager.h
 )
 
 

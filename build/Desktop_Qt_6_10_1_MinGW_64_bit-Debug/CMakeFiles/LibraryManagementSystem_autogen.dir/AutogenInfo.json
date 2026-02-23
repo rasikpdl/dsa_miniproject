@@ -317,6 +317,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/ACER/Downloads/LibraryManagementSystem/controller/librarymanager.h",
+			"MU",
+			"NPUKSKGWT2/moc_librarymanager.cpp",
+			null
+		],
+		[
 			"C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/book.h",
 			"MU",
 			"T3PLNVKCB4/moc_book.cpp",
@@ -424,6 +430,11 @@
 	"SETTINGS_FILE" : "C:/Users/ACER/Downloads/LibraryManagementSystem/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/CMakeFiles/LibraryManagementSystem_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"C:/Users/ACER/Downloads/LibraryManagementSystem/controller/librarymanager.cpp",
+			"MU",
+			null
+		],
 		[
 			"C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/book.cpp",
 			"MU",
