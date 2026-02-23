@@ -323,6 +323,12 @@
 			null
 		],
 		[
+			"C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/hashtable.h",
+			"MU",
+			"T3PLNVKCB4/moc_hashtable.cpp",
+			null
+		],
+		[
 			"C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/linkedlist.h",
 			"MU",
 			"T3PLNVKCB4/moc_linkedlist.cpp",
@@ -420,6 +426,11 @@
 	[
 		[
 			"C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/book.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/ACER/Downloads/LibraryManagementSystem/dsa/hashtable.cpp",
 			"MU",
 			null
 		],

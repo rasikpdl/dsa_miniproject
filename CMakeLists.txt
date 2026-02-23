@@ -24,6 +24,8 @@ set(PROJECT_SOURCES
                dsa/linkedlist.cpp
                dsa/queue.cpp
                dsa/queue.h
+               dsa/hashtable.cpp
+               dsa/hashtable.h
 )
 
 
