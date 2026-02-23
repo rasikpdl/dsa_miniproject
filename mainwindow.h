@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include <QMainWindow>
+#include "controller/librarymanager.h"
 namespace Ui {
 class MainWindow;
 }
@@ -15,6 +16,8 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    LibraryManager* manager;
+    void refreshBookList();
 };
 
 #endif // MAINWINDOW_H
