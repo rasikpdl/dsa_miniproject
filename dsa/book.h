@@ -1,16 +1,33 @@
 #ifndef BOOK_H
 #define BOOK_H
 
-#include <string>
-using namespace std;
+#include <QString>
 
-struct Book
-{
-    int id;
-    string title;
-    string author;
-    bool issued;
-    Book* next;
+//  Book — represents a single book in the library
+//  This is also a NODE for our custom LinkedList.
+//  Each Book holds its own data + a pointer to the next Book.
+
+class Book {
+public:
+
+    // Data Fields
+    QString title;      // e.g. "The Alchemist"
+    QString author;     // e.g. "Paulo Coelho"
+    QString isbn;       // unique identifier, e.g. "978"
+    bool    isIssued;   // true = checked out, false = available
+
+    // LinkedList
+    Book* next;         // pointer to the next book in the list
+
+    // Constructor
+    // Sets all fields and defaults isIssued = false, next = nullptr
+    Book(const QString& title,
+         const QString& author,
+         const QString& isbn);
+
+    //  Helper
+    // Returns a tidy one-line summary for display in the UI
+    QString toDisplayString() const;
 };
 
-#endif
+#endif // BOOK_H
